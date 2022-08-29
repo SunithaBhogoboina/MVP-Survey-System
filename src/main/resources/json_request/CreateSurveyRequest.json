@@ -1,0 +1,43 @@
+{
+  "surveyTitle": "Testing Survey ?",
+  "surveyDescription": "Testing Survey",
+  "questions": [
+    {
+      "question": "Where does Santa Claus live ?",
+      "answers": [
+        {
+          "answer": "Hawaii"
+        },
+        {
+          "answer": "Finland"
+        },
+        {
+          "answer": "Sweden"
+        },
+        {
+          "answer": "China"
+        }
+      ]
+    },
+    {
+      "question": "Were you satisfied with your Christmas presents ?",
+      "answers": [
+        {
+          "answer": "Very Satisfied"
+        },
+        {
+          "answer": "Somewhat Satisfied"
+        },
+        {
+          "answer": "Neither Satisfied nor dissatisfied"
+        },
+        {
+          "answer": "Dissatisfied"
+        },
+        {
+          "answer": "Very dissatisfied"
+        }
+      ]
+    }
+  ]
+}
