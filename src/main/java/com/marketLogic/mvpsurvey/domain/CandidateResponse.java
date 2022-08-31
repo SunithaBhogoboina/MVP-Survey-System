@@ -1,4 +1,4 @@
-package com.marketLogic.mvpsurvey.domain;
+package com.marketlogic.mvpsurvey.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -23,7 +23,7 @@ public class CandidateResponse {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "response_seq")
     @SequenceGenerator(name = "response_seq", initialValue = 1, allocationSize = 1)
     @Column(name = "candidate_response_id")
-    private int candidateResponseId;
+    private Integer candidateResponseId;
     private String value;
 
     @ManyToOne

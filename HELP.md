@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.marketLogic.mvp-survey' is invalid and this project uses 'com.marketLogic.mvpsurvey' instead.
+* The original package name 'com.marketlogic.mvp-survey' is invalid and this project uses 'com.marketlogic.mvpsurvey' instead.
 
 # Getting Started
 

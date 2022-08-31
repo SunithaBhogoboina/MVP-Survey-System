@@ -1,9 +1,9 @@
-package com.marketLogic.mvpsurvey.application;
+package com.marketlogic.mvpsurvey.application;
 
-import com.marketLogic.mvpsurvey.domain.Question;
+import com.marketlogic.mvpsurvey.domain.Question;
 
 import java.util.List;
 
 public interface QuestionService {
-    public Iterable<Question> addQuestions(List<Question> questions);
+    public Iterable<Question> addQuestions(List<Question> questions) throws Exception;
 }

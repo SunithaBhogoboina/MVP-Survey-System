@@ -1,13 +1,12 @@
-package com.marketLogic.mvpsurvey.exception;
+package com.marketlogic.mvpsurvey.exception;
 
 import lombok.Data;
-
 import java.util.List;
 
 @Data
 public class ErrorResponse extends Exception {
-    private final String message;
-    private final List<String> details;
+    private String message;
+    private List<String> details;
     private boolean suppressStackTrace = false;
 
     public ErrorResponse(String message, List<String> details) {

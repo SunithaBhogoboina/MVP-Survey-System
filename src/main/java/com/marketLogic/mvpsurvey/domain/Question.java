@@ -1,4 +1,4 @@
-package com.marketLogic.mvpsurvey.domain;
+package com.marketlogic.mvpsurvey.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -22,7 +22,7 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "question_seq")
     @SequenceGenerator(name = "question_seq", initialValue = 1, allocationSize = 1)
-    private int questionId;
+    private Integer questionId;
     private String question;
 
     @ManyToOne
@@ -34,4 +34,5 @@ public class Question {
     @OneToMany(cascade = CascadeType.ALL)
     @JsonInclude
     private List<Answer> answers;
+    private Integer noOfResponse;
 }

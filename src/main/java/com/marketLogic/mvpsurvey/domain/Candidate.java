@@ -1,4 +1,4 @@
-package com.marketLogic.mvpsurvey.domain;
+package com.marketlogic.mvpsurvey.domain;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -21,7 +21,7 @@ public class Candidate {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "candidate_seq")
     @SequenceGenerator(name = "candidate_seq", initialValue = 1, allocationSize = 1)
     @Column(name = "candidate_id")
-    private int candidateId;
+    private Integer candidateId;
     private String name;
     private String email;
 

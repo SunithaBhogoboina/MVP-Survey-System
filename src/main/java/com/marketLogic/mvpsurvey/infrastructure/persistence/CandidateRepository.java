@@ -1,6 +1,6 @@
-package com.marketLogic.mvpsurvey.infrastructure.persistence;
+package com.marketlogic.mvpsurvey.infrastructure.persistence;
 
-import com.marketLogic.mvpsurvey.domain.Candidate;
+import com.marketlogic.mvpsurvey.domain.Candidate;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

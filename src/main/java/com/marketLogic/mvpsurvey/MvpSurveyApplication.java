@@ -1,10 +1,11 @@
-package com.marketLogic.mvpsurvey;
+package com.marketlogic.mvpsurvey;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class MvpSurveyApplication {
+public class MvpSurveyApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MvpSurveyApplication.class, args);

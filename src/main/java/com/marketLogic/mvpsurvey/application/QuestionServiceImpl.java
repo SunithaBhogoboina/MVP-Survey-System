@@ -1,7 +1,7 @@
-package com.marketLogic.mvpsurvey.application;
+package com.marketlogic.mvpsurvey.application;
 
-import com.marketLogic.mvpsurvey.domain.Question;
-import com.marketLogic.mvpsurvey.infrastructure.persistence.QuestionRepository;
+import com.marketlogic.mvpsurvey.domain.Question;
+import com.marketlogic.mvpsurvey.infrastructure.persistence.QuestionRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,13 @@ public class QuestionServiceImpl implements QuestionService{
 
 
     @Override
-    public Iterable<Question> addQuestions(List<Question> questions) {
+    public Iterable<Question> addQuestions(List<Question> questions) throws Exception {
+        if(questions.isEmpty()) {
+            log.error("Questions payload should consist at least 1 object");
+            throw new Exception("Required request body is missing: Questions payload should consist at least 1 object");
+        }
+        log.info("Successful execution of request");
+
         return questionRepository.saveAll(questions);
     }
 }

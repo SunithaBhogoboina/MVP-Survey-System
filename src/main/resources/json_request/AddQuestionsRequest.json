@@ -1,0 +1,44 @@
+
+
+[
+  {
+    "question": "Where does Santa Claus live ?",
+    "answers": [
+      {
+        "answer": "Hawaii"
+      },
+      {
+        "answer": "Finland"
+      },
+      {
+        "answer": "Sweden"
+      },
+      {
+        "answer": "China"
+      }
+    ],
+    "survey": {
+      "surveyId": 1
+    }
+  },
+  {
+    "question": "Where does Santa Claus live ?",
+    "answers": [
+      {
+        "answer": "Hawaii"
+      },
+      {
+        "answer": "Finland"
+      },
+      {
+        "answer": "Sweden"
+      },
+      {
+        "answer": "China"
+      }
+    ],
+    "survey": {
+      "surveyId": 1
+    }
+  }
+]

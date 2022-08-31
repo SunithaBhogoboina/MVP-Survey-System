@@ -1,4 +1,4 @@
-package com.marketLogic.mvpsurvey.application;
+package com.marketlogic.mvpsurvey.application;
 
 public interface CandidateResponseService {
 }

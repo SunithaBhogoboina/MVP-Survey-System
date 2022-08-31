@@ -1,6 +1,5 @@
-package com.marketLogic.mvpsurvey.domain;
+package com.marketlogic.mvpsurvey.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
@@ -23,12 +22,13 @@ public class Survey {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "survey_seq")
     @SequenceGenerator(name = "survey_seq", initialValue = 1, allocationSize = 1)
-    private int surveyId;
+    private Integer surveyId;
     private String surveyTitle;
     private String surveyDescription;
+    private Integer noOfTotalResponses;
 
     @ElementCollection
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<Question> questions;
 
